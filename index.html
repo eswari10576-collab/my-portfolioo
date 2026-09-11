@@ -6,9 +6,7 @@
 <title>Eswari | Portfolio</title>
 
 <style>
-/* =========================
-   GLOBAL STYLES
-========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -64,10 +62,6 @@ body::after {
     from { transform: translate(0,0); }
     to { transform: translate(70px,-50px); }
 }
-
-/* =========================
-   NAVIGATION
-========================= */
 nav {
     position: fixed;
     top: 0;
@@ -129,9 +123,6 @@ nav a:hover::after {
     cursor: pointer;
 }
 
-/* =========================
-   SECTIONS
-========================= */
 section {
     min-height: 100vh;
     padding: 110px 8% 70px;
@@ -162,10 +153,6 @@ section {
 .section-title p {
     color: var(--muted);
 }
-
-/* =========================
-   HOME
-========================= */
 .home {
     position: relative;
 }
@@ -259,9 +246,6 @@ section {
     50% { transform: translateY(-15px) rotate(2deg); }
 }
 
-/* =========================
-   ABOUT
-========================= */
 .about-card {
     padding: 40px;
     border-radius: 25px;
@@ -282,9 +266,6 @@ section {
     font-size: 17px;
 }
 
-/* =========================
-   SKILLS
-========================= */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -320,9 +301,6 @@ section {
     color: var(--muted);
 }
 
-/* =========================
-   HOBBIES
-========================= */
 .hobbies {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -356,10 +334,6 @@ section {
     color: var(--muted);
     margin-top: 10px;
 }
-
-/* =========================
-   PROJECTS
-========================= */
 .projects {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -419,9 +393,6 @@ section {
     font-size: 13px;
 }
 
-/* =========================
-   CONTACT
-========================= */
 .contact-box {
     max-width: 700px;
     margin: auto;
@@ -438,9 +409,7 @@ section {
     margin: 20px 0;
 }
 
-/* =========================
-   FOOTER
-========================= */
+
 footer {
     text-align: center;
     padding: 25px;
@@ -477,9 +446,6 @@ footer {
     z-index: 999;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 @media(max-width: 850px) {
     nav ul {
         position: absolute;
@@ -533,10 +499,6 @@ footer {
 </head>
 
 <body>
-
-<!-- =========================
-     NAVIGATION
-========================= -->
 <nav>
     <div class="logo">ESWARI.</div>
 
@@ -552,10 +514,6 @@ footer {
     </ul>
 </nav>
 
-
-<!-- =========================
-     HOME
-========================= -->
 <section id="home" class="home">
     <div class="container home-content reveal">
 
@@ -594,9 +552,7 @@ footer {
 </section>
 
 
-<!-- =========================
-     ABOUT
-========================= -->
+
 <section id="about">
     <div class="container">
 
@@ -627,9 +583,6 @@ footer {
 </section>
 
 
-<!-- =========================
-     SKILLS
-========================= -->
 <section id="skills">
     <div class="container">
 
@@ -669,9 +622,7 @@ footer {
 </section>
 
 
-<!-- =========================
-     HOBBIES
-========================= -->
+
 <section id="hobbies">
     <div class="container">
 
@@ -704,10 +655,6 @@ footer {
     </div>
 </section>
 
-
-<!-- =========================
-     PROJECTS
-========================= -->
 <section id="projects">
     <div class="container">
 
@@ -746,10 +693,6 @@ footer {
     </div>
 </section>
 
-
-<!-- =========================
-     CONTACT
-========================= -->
 <section id="contact">
     <div class="container">
 
@@ -789,9 +732,7 @@ footer {
 
 
 <script>
-/* =========================
-   MOBILE MENU
-========================= */
+
 function toggleMenu() {
     document.getElementById("navLinks").classList.toggle("show");
 }
@@ -804,9 +745,6 @@ document.querySelectorAll("#navLinks a").forEach(link => {
 });
 
 
-/* =========================
-   SCROLL REVEAL ANIMATION
-========================= */
 const revealElements = document.querySelectorAll(".reveal");
 
 function revealOnScroll() {
@@ -823,10 +761,6 @@ function revealOnScroll() {
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
 
-
-/* =========================
-   SCROLL TO TOP BUTTON
-========================= */
 const topButton = document.getElementById("topBtn");
 
 window.addEventListener("scroll", () => {
@@ -844,10 +778,6 @@ function goTop() {
     });
 }
 
-
-/* =========================
-   BUTTON RIPPLE EFFECT
-========================= */
 document.querySelectorAll(".btn").forEach(button => {
 
     button.addEventListener("click", function(e) {
